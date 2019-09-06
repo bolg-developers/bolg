@@ -9,10 +9,13 @@ endif
 
 __branch/scram/new:
 ifdef RELEASE_NUM
-	echo ok1
 ifdef SCRAM_NUM
-	echo ok2
+	git checkout -b release/v$(RELEASE_NUM)/scram/$(SCRAM_NUM)
+	git commit --allow-empty -m ":tada: new scram branch"
+	git push -u origin release/v$(RELEASE_NUM)/scram/$(SCRAM_NUM)
+else
+	echo 'you must set SCRAM_NUM'
 endif
 else
-	echo ng
+	echo 'you must set RELEASE_NUM'
 endif
