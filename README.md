@@ -7,6 +7,11 @@
                                                                                                
 ```
 
+## BoLG's LOGO (current)
+<img src="https://github.com/bolg-developers/bolg/blob/master/logo.png?raw=true">
+
+WE LOVE TikTok...
+
 ## ディレクトリの説明
 ```
 .
